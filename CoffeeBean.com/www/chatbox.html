@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/chatbox.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>Chatbox</title>
+</head>
+<body>
+    <header>
+        <nav class="top">
+            <div class="logo">
+                <a href="index.html">Coffeebean.com</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalogue.html">Catalogue</a></li>
+                <li><a href="form.html">S'inscrire</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="chat-box">
+            <ul class="chat-messages"></ul>
+            <form class="chat-form">
+              <input type="text" class="chat-input" placeholder="Saisissez votre message...">
+              <button type="submit">Envoyer</button>
+            </form>
+            <div class="txt">
+                <p id="err"></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footerNav">
+            <h2>&copy;CoffeeBean.com</h2>
+            <nav >
+                <ul>
+                    <li>
+                        <a href="#">Returner en haut</a>
+                    </li>
+                    <li>
+                        <a href="chatbox.html">Nous contacter</a>
+                    </li>
+                    <li>
+                        <a href="catalogue.html">Catalogue</a>
+                    </li>
+                    <li>
+                        <a href="login.html">Login</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <script src="js/burger.js"></script>
+    <script src="js/chatbox.js"></script>
+</body>
+</html>

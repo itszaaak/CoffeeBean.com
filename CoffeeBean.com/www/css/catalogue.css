@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    background-color: #EDE9D5;
+}
+
+main {
+    padding-top: 6rem;
+    width: 55%;
+    margin: 0 auto;
+    min-height: calc(790px - 175px);
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+  
+.card {
+    background-color: #fff;
+    border-radius: 2%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.7);
+    padding: 2.5%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease-in-out;
+}
+.card:hover {
+    transform: translateY(-0.75%);
+}    
+  
+.card img {
+    width: 100%;
+    height: 20rem;
+    border-radius: 2%;
+    object-fit: cover;
+    object-position: center;
+    
+}
+  
+.card h2 {
+    margin-top: 2%;
+    margin-bottom: 1%;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+  
+.card p {
+    margin-top: 0;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+  
+.card a {
+    display: block;
+    margin-top: 3%;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    align-self: center;
+    padding: 2.5%;
+    background-color: black;
+    border-radius: 5rem;
+}
+  
+.card a:hover {
+    color: bisque;
+}
+
+footer{
+    margin-top: 2rem;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <nav class="top">
+            <div class="logo">
+                <a href="index.html">Coffeebean.com</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalogue.html">Catalogue</a></li>
+                <li><a href="form.html">S'inscrire</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="form">
+            <div class="t">
+                <h2>Authentification</h2>
+            </div>
+            <form id="login" action="htbin/register.py" method="post">
+                <fieldset>
+                    <p class="username">
+                        <label for="username"></label>
+                        <input type="text" name="username" id="username" placeholder="username" required>
+                    </p>
+                    <p class="userpwd">
+                        <label for="userpwd"></label>
+                        <input type="password" name="userpwd" id="userpwd" placeholder="Password" required>
+                    </p>
+                    <div class="button">
+                        <button id="button" type="submit">Se connecter</button>
+                    </div>
+                </fieldset>
+                <div class="text">
+                    <p id="sortie"></p>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footerNav">
+            <h2>&copy;CoffeeBean.com</h2>
+            <nav >
+                <ul>
+                    <li>
+                        <a href="#">Returner en haut</a>
+                    </li>
+                    <li>
+                        <a href="chatbox.html">Nous contacter</a>
+                    </li>
+                    <li>
+                        <a href="catalogue.html">Catalogue</a>
+                    </li>
+                    <li>
+                        <a href="login.html">Login</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <script src="js/burger.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

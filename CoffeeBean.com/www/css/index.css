@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Raleway&display=swap');
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 8vh;
+}
+
+main{
+    padding-top: 8vh;
+    font-family: 'Raleway', sans-serif;
+}
+.page1{
+    background-image: url(/images/background.jpg);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.page1::before{
+    position: absolute;
+    display:block;
+    content:" ";
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4 );
+    z-index: 0;
+}
+
+.pr h2{
+    color: #fff;
+    font-size: 2.60rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    z-index: -1;
+}
+.link{
+    margin-top: 3rem;
+    z-index: 1;
+}
+.link a{
+    text-decoration: none;
+    color: #fff;
+    background-color: black;
+    padding: 0.60rem;
+    border-radius: 2rem;
+    font-size: larger;
+    font-weight: 500;
+}
+
+.link a:hover{
+    background-color: #F2D2BD;
+    color: #000;
+}
+
+.page2{
+    background-color: #EDE9D5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.p{
+    margin: 4rem 0 0 4rem;
+}
+
+.p h2{
+    font-size: 2.60rem;
+    font-family: 'Kaushan Script', cursive;
+}
+.par{
+    font-size: large;
+    margin:2rem 10rem 0 4rem;
+}
+.par p{
+    margin-bottom: 1.30rem;
+    line-height: 1.50rem;
+}
+.cat{
+    align-self:center;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.cat a{
+    text-decoration: none;
+    color: #fff;
+    font-size: larger;
+    font-weight: 500;
+    padding: 0.60rem;
+    border-radius: 2rem;
+    background-color: #000;
+}
+
+.cat a:hover{
+    background-color: #F2D2BD;
+    color: #000;
+}
+
+@media screen and (max-width: 768px) {
+    .par{
+        margin:2rem 1rem 0 4rem;
+    }
+}

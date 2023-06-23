@@ -1,0 +1,22 @@
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+footer h2{
+    font-size: 1.5rem;
+}
+.footerNav nav{
+    margin-top: 1.50rem;
+}
+.footerNav li {
+    margin-top: 0.70rem;
+}
+.footerNav a{
+    text-decoration: none;
+    color: white;  
+}
+.footerNav a:hover{
+    color:#F2D2BD;  
+}
